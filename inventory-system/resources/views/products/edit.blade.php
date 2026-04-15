@@ -58,7 +58,7 @@
 
                             <!-- Price -->
                             <div>
-                                <x-input-label for="price" :value="__('Price ($)')" class="text-gray-700 dark:text-gray-300" />
+                                <x-input-label for="price" :value="__('Price (₱)')" class="text-gray-700 dark:text-gray-300" />
                                 <x-text-input id="price" class="block w-full mt-1 border-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-indigo-500 focus:ring focus:ring-indigo-200 dark:focus:ring-indigo-800 shadow-sm" type="number" step="0.01" min="0" name="price" :value="old('price', $product->price)" required />
                                 <x-input-error :messages="$errors->get('price')" class="mt-2 text-red-500" />
                             </div>
